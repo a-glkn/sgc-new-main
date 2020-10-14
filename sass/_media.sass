@@ -1,0 +1,507 @@
+@import "vars"
+
+
+ 
+// ≥1000px
++media-breakpoint-down(md)
+    .intro-slider__item
+        padding-top: 50px
+        padding-bottom: 50px
+        height: auto
+    .payment-info
+        padding-left: 0
+        padding-right: 0
+    .section_intro-payment
+        .heading_lg
+            margin-top: 0.5em
+            margin-bottom: 1em
+        .img-card
+            display: none
+        .payment-info
+            margin-top: 1em
+
+    .payment-block__warn
+        padding-left: 15px
+        padding-right: 15px
+        br
+            display: none
+
+    .payment-block
+        .form
+            padding-left: 30px
+            padding-right: 30px
+            .form__label
+                margin-bottom: 20px
+            .form__label-heading_full-width
+                margin-bottom: 5px
+
+    .payment-info
+        display: block
+        &__content
+            padding-left: 0
+            margin-top: 10px
+    .heading
+        &_lg
+            font-size: 38px
+        &_md
+            font-size: 30px
+        &_sm
+            font-size: 24px
+
+    .version-2
+        .heading
+            &_lg
+                font-size: 36px
+            &_xmd
+                font-size: 26px
+            &_md
+                font-size: 22px
+
+    .tile-slider 
+        .slick-next
+            left: 239px - 15px
+
+    .text-slider__item-inner
+        margin-top: 0
+        margin-bottom: 0
+
+    .price-block 
+        padding-left: 0
+
+    .gallery
+        &__item
+            margin-left: 5px
+            margin-right: 5px
+
+    .text-slider-wrapper
+        margin-top: 30px
+        padding-bottom: 10px
+        
+    .section_contacts
+        .form-container
+            margin-top: 30px
+    .version-2
+        .form-container
+            padding-left: 30px
+            padding-right: 30px
+    .content-slider__item.slick-active .content-slider__item-num
+        display: none
+    .content-slider .slick-dots
+        margin-top: 20px
+        width: 100%
+
+    .footer__menu
+        display: none
+    .footer__heading
+        display: none
+
+    .footer
+        .soc
+            text-align: center
+            li
+                margin: 0 10px
+        &__link
+            text-align: center
+        &__logo
+            margin-left: auto
+            margin-right: auto
+    body
+        padding-top: 60px
+
+    .content-slider
+        margin-bottom: -120px
+
+    .quadrat
+        margin-top: 0 !important
+    .header
+        width: 100%
+        height: 60px
+        position: fixed
+        top: 0
+        left: 0
+        background-color: #fff
+        z-index: 1000
+        box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+        .logo
+            width: 95.333px
+            height: 22px
+            display: block
+            position: absolute
+            top: 15px
+            left: 15px
+            svg
+                width: 95.333px
+                height: 22px
+        .menu-toggler
+            display: block
+            position: absolute
+            right: 15px
+            top: 17px
+        .payments
+            display: none
+        .phone
+            display: none
+        .header-1
+            height: auto
+        .header-2
+            position: absolute
+            left: 0
+            height: auto
+            width: 100%
+            top: 60px
+            background-color: #fff
+            display: none
+            box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+        .call-back
+            display: none
+        .search-zoom
+            top: 21px
+            right: 55px
+            display: block
+        .form-search
+            right: auto !important
+            top: auto !important
+            position: relative !important
+            width: 100%
+            padding-top: 10px
+            padding-bottom: 10px
+            padding-left: 0
+            padding-right: 30px
+            &__icon
+                left: auto
+                right: 0
+        .location
+            left: 125px
+            top: 22px
+        &__menu
+            display: none
+
+    .menu
+        ul
+            li
+                a
+                    font-size: 18px
+    
+    .footer
+        .special-version-link
+            margin-top: 0 !important
+
+    .text-slider-wrapper
+        height: auto
+        padding-bottom: 35px
+
+    .form__label
+        margin-bottom: 0
+
+    .section
+        &_figure-2
+            padding-top: 40px
+            padding-bottom: 40px
+            &:before, &:after
+                display: none
+
+            img
+                margin-top: 30px
+        &_payment
+            img
+                display: none
+            .alert
+                margin-bottom: 50px
+                margin-top: 40px
+
+    .alert
+        &__icon
+            width: 105.5px
+            height: 106.5px
+            font-size: 95px
+            line-height: 0.66
+            padding-left: 20px
+            position: absolute
+            left: -28.5px
+            top: -77.5px
+
+    .section_progs
+        img
+            display: inline-block
+            margin-bottom: 15px
+
+    .version-2
+        padding-top: 65px
+        .section_first
+            .bg
+                height: auto
+                padding-top: 100px
+                padding-bottom: 150px
+                position: relative
+            .btn_arr-right-long
+                position: absolute
+                left: 0
+                bottom: 0
+                margin-top: 50px
+                width: 100%
+                padding-left: 30px
+                &:after
+                    right: 30px
+
+        .section_gal-tour
+            overflow: hidden
+            .tour
+                margin-top: 30px
+        
+        .header
+            width: 100%
+            height: 65px
+            position: fixed
+            top: 0
+            left: 0
+            background-color: #fff
+            z-index: 10
+            box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+            &__phones
+                display: none
+                width: 100%
+                height: 65px
+                position: fixed
+                top: 0
+                left: 0
+                background-color: #fff
+                z-index: 10
+                box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+            .logo
+                width: 148.2px
+                height: 34.2px
+                display: block
+                position: absolute
+                top: 15.4px
+                left: 15px
+                svg
+                    width: 148.2px
+                    height: 34.2px
+            .menu-toggler
+                display: block
+                position: absolute
+                right: 15px
+                top: 19.5px
+            &__menu
+                display: none
+            .call-me
+                display: none
+            .btn
+                display: none
+
+
+    .feedback
+        &__item
+            width: calc(50% - 4.5px)
+
+    .quote
+        padding-left: 0
+        .col-text
+            padding-top: 0
+        &:after
+    
+// ≥768px
++media-breakpoint-down(sm)
+    .py-5_mob
+        padding: 2rem 0 !important
+    .mt-5_mob
+        margin-top: 2rem !important
+
+    .gallery
+        &__item
+            &:last-child
+                margin-bottom: 0
+                
+    .section_intro-2:after, .section_intro-2:before
+        display: none
+
+    .section_intro-2 
+        .row
+            padding-top: 30px
+            min-height: 1px
+            padding-bottom: 80px
+        .heading_lg
+            width: 100%
+            br
+                display: none
+        .tile-slider
+            display: none
+
+        .more-link
+            bottom: 15px
+
+    .gallery
+        flex-wrap: wrap
+        &__item
+            width: 100%
+            margin-bottom: 30px
+            img
+                width: 100%
+                height: auto
+
+    .price-block
+        padding-right: 0
+        .leaf-block
+            margin-top: 30px
+            width: 100%
+            position: static
+
+    .icons-list 
+        &__item
+            width: 100%
+            &:nth-child(2)
+                border-top: 1px solid #ebebeb
+            &-content
+                &_lg
+                    font-size: 18px
+
+    .heading
+        &_lg
+            font-size: 32px
+        &_md
+            font-size: 26px
+        &_sm
+            font-size: 22px
+    .gallery-slider
+        padding-right: 0
+        &-nav
+           display: none
+
+
+    .section_programms
+        .heading_sm
+            margin-top: 40px
+    .content-slider 
+        .col-content
+            margin-top: 40px
+
+    .section_gallery
+        .btn.btn_accent
+            margin-left: auto
+            margin-right: auto
+            display: block
+
+        .gallery-slider
+            margin-top: 30px
+
+    .section_capture
+        .form
+            width: 100%
+            background-color: #fff
+            margin-left: 15px
+            padding: 30px
+
+    .section_capture 
+        .form
+            width: 100%
+            margin-left: 0
+
+    .version-1
+        .section
+            &_figure-2
+                margin-bottom: 0
+
+    .feedback
+        &__item
+            width: 100%
+
+
+    .features
+        &__item
+            width: 100%
+            margin-top: 10px
+            margin-bottom: 30px
+            max-height: none
+            &-caption
+                display: block
+                opacity: 1
+                left: 0
+                height: auto
+
+    .section_features
+        .features-wrapper
+            .features-bg
+                display: none
+    .news-list
+        flex-wrap: wrap
+        &__item
+            width: 100%
+            margin-bottom: 30px
+// ≥576px
++media-breakpoint-down(xs)
+    .btn_w-260
+        width: 100%
+
+    .section_capture 
+        .form
+            padding: 30px
+    .header
+        .location
+            font-size: 12px
+            top: 24px
+            &__icon
+                margin-right: 5px
+    .section_pension .row-btns .btn
+        margin-left: 0
+        margin-right: 0
+    .content-slider 
+        .slick-dots
+            height: auto
+            box-shadow: none
+            li
+                margin-left: 10px
+                margin-right: 10px
+                button
+                    text-indent: -99999px
+                    width: 10px
+                    height: 10px
+                &:after
+                    display: none
+
+
+    .form__checkbox
+        font-size: 14px
+        display: block
+        width: 100%
+       
+
+    .version-2 .form-container
+        padding-left: 15px
+        padding-right: 15px
+
+    .content-slider__item .col-content
+        padding-bottom: 80px
+
+    .version-2
+        .section_first
+            .btn_arr-right-long
+                padding-left: 15px
+
+    .card
+        width: 100%
+
+    .features-group
+        .list-checked
+            margin-left: 0
+@media only screen and (max-width : 420px)
+    .payment-block
+        .form
+            padding-left: 15px
+            padding-right: 15px
+
+@media only screen and (max-width : 375px)
+    .form__checkbox
+        font-size: 12px
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

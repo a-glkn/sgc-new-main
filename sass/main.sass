@@ -1,0 +1,507 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+
+
+a
+	color: #316995
+.menu
+	ul
+		li
+			list-style: none
+			.icon
+				margin: auto 0
+				margin-right: 8px
+			a
+				margin: auto 0
+				font-size: 16px
+				color: $text
+				font-weight: 500
+				text-decoration: none
+				&:hover
+					color: $accent
+.header
+	height: 174px
+	position: relative
+	z-index: 10
+	.search-zoom
+		cursor: pointer
+		width: 16px
+		height: 16px
+		display: none
+		position: absolute
+		svg
+			width: 16px
+			height: 16px
+	.phone
+		font-size: 16px
+		font-weight: 500
+		left: 440px
+		top: 51px
+		position: absolute
+		a
+			text-decoration: none
+			color: #000
+			&:hover
+				color: $accent
+	.location
+		font-size: 16px
+		display: flex
+		line-height: 17px
+		position: absolute
+		left: 280px
+		top: 54px
+		cursor: pointer
+		&__icon
+			width: 11px
+			height: 17px
+			margin-right: 5px
+			svg
+				width: 11px
+				height: 17px
+		&__city
+			color: #296193
+			font-weight: 500
+			text-decoration: underline
+	.header-1
+		height: 112px
+		box-shadow: 0px 22px 30px 0px rgba(0, 0, 0, 0.03)
+	.header-2
+		height: 62px
+		.form-search
+			right: 15px
+			top: 11px
+			position: absolute
+	.container
+		position: relative
+	.payments
+		display: flex
+		line-height: 31px
+		right: 15px
+		top: 47px
+		position: absolute
+		img
+			display: inline-block
+			margin-right: 20px
+		a
+			font-size: 16px
+			color: #000000
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.call-back
+		display: flex
+		font-size: 16px
+		color: #000101
+		font-weight: 500
+		line-height: 16px
+		position: absolute
+		top: 55px
+		left: 580px
+		transition: .3s ease
+		text-decoration: none
+		.icon
+			margin-right: 12px
+		div
+
+		&:hover
+			color: $accent
+	.logo
+		width: 247px
+		height: 57px
+		display: block
+		position: absolute
+		top: 23px
+		left: 15px
+		svg
+			width: 247px
+			height: 57px
+	&__menu
+		padding-right: 300px
+		a
+			transition: .3s ease
+			text-decoration: none
+			&:hover
+				color: $accent
+		>ul
+			display: flex
+			margin-bottom: 0
+			>li
+				margin-right: 25px
+				list-style: none 
+				padding-top: 19px
+				padding-bottom: 19px
+				position: relative
+				&.has-sub
+					padding-right: 20px
+					position: relative
+					&:after
+						position: absolute
+						right: 0
+						top: 50%
+						margin-top: -4.5px
+						content: ''
+						display: block
+						width: 16px
+						height: 7px
+						background-position: 0 0
+						background-repeat: no-repeat
+						background-image: url(../img/arr.png)
+				>a
+					font-size: 16px
+					text-transform: uppercase
+					font-weight: 500
+					color: #000000
+					text-decoration: none
+				
+				ul
+					display: none
+					position: absolute
+					top: 62px
+					left: 0
+					background: #fff
+					padding-left: 28px
+					padding-right: 28px
+					padding-top: 20px
+					padding-bottom: 20px
+					box-shadow: 0px 5px 54px 0px rgba(0, 0, 0, 0.05)
+					li
+						list-style: none 
+						margin: 0.5em 0
+						a
+							font-size: 18px
+							color: #000000
+							font-weight: 500
+							white-space: nowrap
+
+				&:hover
+					&.has-sub
+						&:after
+							transform: rotate(180deg)
+					ul
+						display: block
+							
+
+
+			
+	&__link
+		font-size: 16px
+		color: $text
+		font-weight: 500
+		position: absolute
+		right: 15px
+		top: 72px
+		a
+			color: $text
+			text-decoration: none
+			&:hover
+				color: $accent
+
+
+.section_intro
+	background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(245,247,250,1) 100%)
+	.logo
+		width: 158px
+		height: 132px
+		svg
+			width: 158px
+			height: 132px
+
+	.row
+		min-height: 625px
+		position: relative
+	.col
+		flex-wrap: wrap
+
+	.more-link
+		position: absolute
+		bottom: 55px
+		left: 15px
+		font-family: $third-font
+	.container
+		position: relative
+
+	.tile-slider
+		position: absolute
+		left: 417px
+		top: 47px
+
+
+.section_intro-2
+	width: 100%
+	overflow-x: hidden
+	position: relative
+	min-height: 516px
+	.img-present
+		position: relative
+		z-index: 4
+	&:before
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: 100px
+		width: 549px
+		height: 516px
+		background-image: url(../img/figure.png)
+		background-repeat: no-repeat
+		background-position: 0 0
+		z-index: 2
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: 0
+		left: 50%
+		margin-left: 100px
+		width: 100%
+		height: 516px
+		background-color: #dde8f0
+
+.section_capture
+	background-image: url(../img/bg-capture.jpg)
+	background-repeat: no-repeat
+	background-position: top center
+	.form
+		margin-top: 110px
+		width: 500px
+		background-color: #fff
+		margin-left: 15px
+		padding: 45px
+		box-shadow: -33px 24px 30px 0px rgba(0, 0, 0, 0.04)
+.section_payment
+	img
+		position: relative
+		z-index: 3
+	.alert
+		margin-top: 110px
+
+.section_pension
+	.row-btns
+		.btn
+			margin-left: 10px
+			margin-right: 10px
+
+.more-link
+	font-size: 14px
+	font-weight: 500
+	line-height: 1.5
+	color: #076698
+	display: inline-block
+	padding-right: 24px
+	position: relative
+	text-decoration: none
+	transition: .3s ease
+	.icon
+		width: 16.6px
+		height: 11px
+		position: absolute
+		right: 0
+		top: 50%
+		margin-top: -5.5px
+		fill: #076698
+
+	&:hover
+		color: $accent
+		.icon
+			fill: $accent
+
+.section_feedback
+	.col-btn-more
+		text-align: right
+
+
+.section_features
+	.features-wrapper
+		position: relative
+		margin-top: 50px
+		.features
+			position: relative
+			z-index: 10
+		.features-bg
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			svg
+				width: 100%
+				height: 326px
+				fill: #f2f7fa
+.menu-wrapper
+	box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
+	height: 100%
+	position: fixed
+	top: 65px
+	left: 0
+	width: 100%
+	z-index: 11
+	background-color: #fff
+	display: none
+	&__inner
+		width: 100%
+		display: flex
+		overflow-y: auto
+	.menu
+		margin: auto
+		width: 100%
+		text-align: center
+		li
+			padding-top: 5px
+			padding-bottom: 5px
+			a
+				width: 100%
+				color: $accent
+			
+.section_intro-payment
+	background: linear-gradient(125deg, rgba(255,255,255,1) 0%, rgba(245,247,250,1) 100%)
+	.container
+		position: relative
+		z-index: 2
+
+.menu-openned
+	overflow: hidden
+	.menu-wrapper
+		display: flex
+
+.footer
+	.soc
+		&__item
+			margin-right: 20px
+			a
+				svg
+					max-width: 20px
+					height: 20px	
+					fill: #d7d7d7
+				&:hover
+					svg
+						fill: $accent
+	&__heading
+		font-size: 18px
+		font-weight: 500
+		color: #000
+		a
+			font-size: 18px
+			font-weight: 500
+			color: #000
+			text-decoration: none
+			&:hover
+				color: $accent
+	&__link
+		font-size: 14px
+		color: #316995
+		a
+			color: #316995
+			text-decoration: none
+	&__logo
+		width: 123px
+		svg
+			width: 123px
+	&__menu
+		ul
+			li
+				list-style-type: none
+				margin: 0.25em 0
+				a
+					text-decoration: none
+					font-size: 16px
+					color: #000
+					transition: .3s ease
+					&:hover
+						color: $accent
+
+.section_progs
+	.row-border
+		border-bottom: 1px solid #e3e3e3
+
+.version-2
+	.header
+		position: absolute
+		width: 100%
+		height: 115px
+		.logo
+			width: 317px
+			height: 74px
+			display: block
+			position: absolute
+			top: 32px
+			left: 15px
+			svg
+				width: 317px
+				height: 74px
+		.btn
+			position: absolute
+			right: 15px
+			top: 75px
+		&__phones
+			position: absolute
+			top: 30px
+			right: 399px
+			a
+				display: inline-block
+				margin-left: 5px
+				margin-right: 5px
+				font-size: 14px
+				color: #000
+				font-weight: 500
+
+		&__menu
+			display: inline-block
+			position: absolute
+			right: 218px
+			top: 82px
+			ul
+				li
+					list-style: none
+					display: inline-block
+					margin-left: 18px
+					margin-right: 18px
+					a
+						font-size: 16px
+						color: #727272
+						font-weight: 500
+						text-decoration: none
+						transition: .3s ease
+						&:hover
+							color: #000000
+		.call-me
+			position: absolute
+			display: flex
+			font-size: 16px
+			color: #000101
+			text-decoration: none
+			right: 15px
+			top: 29px
+			.icon
+				margin-right: 10px
+			span
+				margin-top: auto
+				margin-bottom: auto
+	.section_first
+		.bg
+			background-repeat: no-repeat
+			background-position: center
+			height: 817px
+			max-width: 1250px
+			margin-left: auto
+			margin-right: auto
+			display: flex
+			flex-direction: column
+
+
+	
+
+
+
+
+
+
+	.section_gal-tour
+		a
+			display: inline-block
+			margin-top: 1em
+			text-transform: uppercase
+			font-size: 14px
+			color: #000
+@import "media" // Always at the end

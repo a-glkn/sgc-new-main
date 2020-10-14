@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Core Sans DS';
+    src: local('Core Sans DS 55 Bold'), local('Core-Sans-DS-55-Bold'),
+        url('CoreSansDS55Bold.woff2') format('woff2'),
+        url('CoreSansDS55Bold.woff') format('woff'),
+        url('CoreSansDS55Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
