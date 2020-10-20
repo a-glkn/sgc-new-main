@@ -1,9 +1,41 @@
 @import "vars"
 
++media-breakpoint-up(lg)
+    .menu-short-openned
+        .menu-toggler
+            i
+                left: 8px
+                transform: rotate(45deg)
+                &:before
+                    top: 0
+                    transform: rotate(-90deg)
+                &:after
+                    display: none
 
  
 // ≥1000px
 +media-breakpoint-down(md)
+    .menu-openned
+        overflow: hidden
+        .menu-wrapper
+            display: flex
+
+    .menu-short-openned 
+        .header 
+            .header-2
+                display: none
+
+    .menu-openned
+        .menu-toggler
+            i
+                left: 8px
+                transform: rotate(45deg)
+                &:before
+                    top: 0
+                    transform: rotate(-90deg)
+                &:after
+                    display: none
+            
     .intro-slider__item
         padding-top: 50px
         padding-bottom: 50px
@@ -48,15 +80,6 @@
         &_sm
             font-size: 24px
 
-    .version-2
-        .heading
-            &_lg
-                font-size: 36px
-            &_xmd
-                font-size: 26px
-            &_md
-                font-size: 22px
-
     .tile-slider 
         .slick-next
             left: 239px - 15px
@@ -80,10 +103,7 @@
     .section_contacts
         .form-container
             margin-top: 30px
-    .version-2
-        .form-container
-            padding-left: 30px
-            padding-right: 30px
+
     .content-slider__item.slick-active .content-slider__item-num
         display: none
     .content-slider .slick-dots
@@ -225,71 +245,6 @@
             display: inline-block
             margin-bottom: 15px
 
-    .version-2
-        padding-top: 65px
-        .section_first
-            .bg
-                height: auto
-                padding-top: 100px
-                padding-bottom: 150px
-                position: relative
-            .btn_arr-right-long
-                position: absolute
-                left: 0
-                bottom: 0
-                margin-top: 50px
-                width: 100%
-                padding-left: 30px
-                &:after
-                    right: 30px
-
-        .section_gal-tour
-            overflow: hidden
-            .tour
-                margin-top: 30px
-        
-        .header
-            width: 100%
-            height: 65px
-            position: fixed
-            top: 0
-            left: 0
-            background-color: #fff
-            z-index: 10
-            box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
-            &__phones
-                display: none
-                width: 100%
-                height: 65px
-                position: fixed
-                top: 0
-                left: 0
-                background-color: #fff
-                z-index: 10
-                box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.04)
-            .logo
-                width: 148.2px
-                height: 34.2px
-                display: block
-                position: absolute
-                top: 15.4px
-                left: 15px
-                svg
-                    width: 148.2px
-                    height: 34.2px
-            .menu-toggler
-                display: block
-                position: absolute
-                right: 15px
-                top: 19.5px
-            &__menu
-                display: none
-            .call-me
-                display: none
-            .btn
-                display: none
-
-
     .feedback
         &__item
             width: calc(50% - 4.5px)
@@ -396,10 +351,6 @@
             width: 100%
             margin-left: 0
 
-    .version-1
-        .section
-            &_figure-2
-                margin-bottom: 0
 
     .feedback
         &__item
@@ -465,17 +416,9 @@
         width: 100%
        
 
-    .version-2 .form-container
-        padding-left: 15px
-        padding-right: 15px
-
     .content-slider__item .col-content
         padding-bottom: 80px
 
-    .version-2
-        .section_first
-            .btn_arr-right-long
-                padding-left: 15px
 
     .card
         width: 100%
