@@ -35,6 +35,8 @@ body
 	overflow-x: hidden
 	color: $text
 
+.font-third 
+	font-family: $third-font !important
 
 .vertical-center
 
@@ -51,6 +53,9 @@ h1, h2, h3, h4, h5, h6
 
 .highlighted
 	text-decoration: underline !important
+
+.tt-u
+	text-transform: uppercase
 
 .mh-auto
 	min-height: auto !important 
@@ -166,6 +171,7 @@ h1, h2, h3, h4, h5, h6
 	padding-right: 20px
 	border: 0
 	cursor: pointer
+	display: inline-block
 	&_left
 		text-align: left
 
@@ -183,6 +189,26 @@ h1, h2, h3, h4, h5, h6
 		&:hover
 			.icon
 				transform: translateX(5px)
+
+	&_arr-right
+		padding-left: 0
+		font-size: 18px
+		display: flex
+		text-decoration: none !important
+		.icon
+			margin-left: 15px
+			margin-top: auto
+			margin-bottom: auto
+			display: inline-block
+			width: 64px
+			height: 13px
+			border: 0
+			cursor: pointer
+			text-indent: -99999px
+			background-color: transparent
+			background-repeat: no-repeat
+			background-position: 0 0
+			background-image: url(../img/arr-right2.png)
 	&_h-64
 		height: 64px
 	&_h-38
@@ -193,9 +219,24 @@ h1, h2, h3, h4, h5, h6
 		height: 60px
 	&_w-260	
 		width: 255px
+	&_w-100p
+		width: 100%
 	&_light
 		background-color: #fff
-
+	&_link
+		display: inline-block
+		text-decoration: underline
+		font-size: 14px
+		&.btn_h-64
+			line-height: 64px
+		&.btn_h-38
+			line-height: 38px
+		&.btn_h-97
+			line-height: 64px
+		&.btn_h-60
+			line-height: 60px
+		&:hover
+			text-decoration: none
 	&_sm
 		height: 40px
 		padding-left: 18px
@@ -323,6 +364,27 @@ h1, h2, h3, h4, h5, h6
 			background-color: $accent
 
 
+.new-slider
+	padding-bottom: 50px
+	background-color: #f6f8fa
+	&__item
+		background-repeat: no-repeat
+		background-position: center bottom
+		background-size: cover
+		.logo
+			width: 158px
+			height: 132px
+			svg
+				width: 158px
+				height: 132px
+		.heading-icon
+			margin-top: 110px
+			display: flex
+			.icon
+				margin-right: 20px
+		.btn
+			margin-top: 70px
+
 
 .img-present
 	position: relative
@@ -352,6 +414,15 @@ h1, h2, h3, h4, h5, h6
 		&.lg
 			font-size: 18px
 
+	.list
+		li
+			color: #000
+			margin: 1em 0
+			list-style-position: inside
+			list-style: none
+			&:before
+				content: '•'
+				margin-right: 5px
 
 	.list-checked
 		li
@@ -703,6 +774,8 @@ h1, h2, h3, h4, h5, h6
 		.gallery
 			&__item
 				width: 100%
+				img
+					width: 100%
 
 .gallery-more-link
 	font-size: 14px
@@ -1619,6 +1692,20 @@ hr
 	padding-top: 50px
 	padding-bottom: 35px
 	box-shadow: -36px 54px 51px 0px rgba(6, 9, 13, 0.04)
+	&_bg
+		background-color: #f9f9f9
+		background-repeat: no-repeat
+		background-position: center
+		background-position: center
+		box-shadow: 0px 22px 30px 0px rgba(6, 9, 13, 0.05)
+	.form-heading
+		position: relative
+		padding-left: 70px
+		.icon
+			left: 0
+			top: 4px
+			position: absolute
+
 .form
 	&__input
 		width: 100%
